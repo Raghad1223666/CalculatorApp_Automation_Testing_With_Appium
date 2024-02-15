@@ -1,4 +1,4 @@
-package appium_project;
+package smokeTest;
 
 import java.io.File;
 import java.net.MalformedURLException;
