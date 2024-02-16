@@ -31,13 +31,6 @@ public class MathematicalCalculations extends Parameters {
 				System.getProperty("user.dir") + File.separator + "app" + File.separator + "calculator.apk");
 		var appiumServerUrl = URI.create("http://127.0.0.1:4723/wd/hub").toURL();
 		driver = new AndroidDriver(appiumServerUrl, desiredCapabilities);
-
-		// Only for Mobile browsers capabilities
-		// desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME,
-		// "chrome");
-		// desiredCapabilities.setCapability("chromedriverExecutable",
-		// System.getProperty("user.dir") + File.separator + "drivers" + File.separator
-		// + "chromedriver.exe");
 	}
 
 	@Test(description = "Subtraction of two numbers", priority = 1)
