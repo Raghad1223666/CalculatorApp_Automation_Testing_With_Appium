@@ -1,6 +1,13 @@
 package pageObjects;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Actions extends Parameters {
 	public String idBeginningForNumber = "com.google.android.calculator:id/digit_";
@@ -78,5 +85,32 @@ public class Actions extends Parameters {
 		}
 
 		clickOnEqual();
+	}
+
+	public static Double factorial(int n) {
+		if (n < 0) {
+			throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
+		}
+
+		Double result = 1.0;
+		for (int i = 1; i <= n; i++) {
+			result *= i;
+		}
+		return result;
+	}
+	
+	public void takeScreenshot(String screenshotName) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+        String destinationpath = System.getProperty("user.dir") + File.separator + "screenshots" + 
+		File.separator +  screenshotName + ".png";
+        
+        File finalDestination = new File(destinationpath); 
+		try {
+			FileUtils.copyFile(source, finalDestination);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

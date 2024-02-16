@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appium_project.MathematicalCalculations">
+      <class name="smokeTest.MathematicalCalculations">
         <methods>
           <include name="factorialTestCase"/>
-          <include name="afterTest"/>
           <include name="setup"/>
+          <include name="divideTestCase"/>
+          <include name="sqrtTestCase"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- appium_project.MathematicalCalculations -->
+      </class> <!-- smokeTest.MathematicalCalculations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

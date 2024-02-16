@@ -7,16 +7,12 @@ import io.appium.java_client.android.AndroidDriver;
 public class Parameters {
 	public static DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 	public static AndroidDriver driver;
+
 	public enum OperationTypeForTwoNumbers {
-	    ADD,
-	    SUBTRACT,
-	    MULTIPLY,
-	    DIVIDE,
-	    POWER
+		ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER
 	}
-	
+
 	public enum OperationTypeForOneNumber {
-		SQRT,
-		FACTORIAL
+		SQRT, FACTORIAL
 	}
 }
