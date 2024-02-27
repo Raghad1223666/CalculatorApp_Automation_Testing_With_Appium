@@ -8,7 +8,11 @@
           <include name="factorialTestCase"/>
           <include name="setup"/>
           <include name="divideTestCase"/>
+          <include name="powerTestCase"/>
+          <include name="multiplyTestCase"/>
           <include name="sqrtTestCase"/>
+          <include name="addTestCase"/>
+          <include name="subtractTestCase"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- smokeTest.MathematicalCalculations -->

@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T15:17:00 EET" name="Default suite" finished-at="2024-02-16T15:17:51 EET" duration-ms="50941">
+  <suite started-at="2024-02-27T19:22:12 EET" name="Default suite" finished-at="2024-02-27T19:23:29 EET" duration-ms="76811">
     <groups>
     </groups>
-    <test started-at="2024-02-16T15:17:00 EET" name="Default test" finished-at="2024-02-16T15:17:51 EET" duration-ms="50941">
+    <test started-at="2024-02-27T19:22:12 EET" name="Default test" finished-at="2024-02-27T19:23:29 EET" duration-ms="76811">
       <class name="smokeTest.MathematicalCalculations">
-        <test-method is-config="true" signature="setup()[pri:0, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:00 EET" name="setup" finished-at="2024-02-16T15:17:13 EET" duration-ms="12453" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:22:12 EET" name="setup" finished-at="2024-02-27T19:22:46 EET" duration-ms="34436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="subtractTestCase()[pri:1, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:13 EET" name="subtractTestCase" description="Subtraction of two numbers" finished-at="2024-02-16T15:17:20 EET" duration-ms="7520" status="PASS">
+        <test-method signature="subtractTestCase()[pri:1, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:22:46 EET" name="subtractTestCase" description="Subtraction of two numbers" finished-at="2024-02-27T19:22:55 EET" duration-ms="8922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtractTestCase -->
-        <test-method signature="multiplyTestCase()[pri:2, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:20 EET" name="multiplyTestCase" description="Multiplication of two numbers" finished-at="2024-02-16T15:17:27 EET" duration-ms="6719" status="PASS">
+        <test-method signature="multiplyTestCase()[pri:2, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:22:55 EET" name="multiplyTestCase" description="Multiplication of two numbers" finished-at="2024-02-27T19:23:03 EET" duration-ms="7620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiplyTestCase -->
-        <test-method signature="powerTestCase()[pri:3, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:27 EET" name="powerTestCase" description="Power of two numbers" finished-at="2024-02-16T15:17:31 EET" duration-ms="3771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- powerTestCase -->
-        <test-method signature="addTestCase()[pri:4, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:31 EET" name="addTestCase" description="Summation of two numbers" finished-at="2024-02-16T15:17:37 EET" duration-ms="6689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTestCase -->
-        <test-method signature="divideTestCase()[pri:5, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:37 EET" name="divideTestCase" description="Division of two numbers" finished-at="2024-02-16T15:17:44 EET" duration-ms="6503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divideTestCase -->
-        <test-method signature="sqrtTestCase()[pri:6, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:44 EET" name="sqrtTestCase" description="Sqrt of any number" finished-at="2024-02-16T15:17:48 EET" duration-ms="3928" status="PASS">
+        <test-method signature="sqrtTestCase()[pri:3, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:03 EET" name="sqrtTestCase" description="Sqrt of any number" finished-at="2024-02-27T19:23:07 EET" duration-ms="4153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sqrtTestCase -->
-        <test-method signature="factorialTestCase()[pri:7, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:48 EET" name="factorialTestCase" description="Factorial of any number" finished-at="2024-02-16T15:17:51 EET" duration-ms="2985" status="PASS">
+        <test-method signature="powerTestCase()[pri:4, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:07 EET" name="powerTestCase" description="Power of two numbers" finished-at="2024-02-27T19:23:11 EET" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- powerTestCase -->
+        <test-method signature="factorialTestCase()[pri:5, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:11 EET" name="factorialTestCase" description="Factorial of any number" finished-at="2024-02-27T19:23:15 EET" duration-ms="3667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- factorialTestCase -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-16T15:17:51 EET" name="afterTest" finished-at="2024-02-16T15:17:51 EET" duration-ms="272" status="PASS">
+        <test-method signature="addTestCase()[pri:6, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:15 EET" name="addTestCase" description="Summation of two numbers" finished-at="2024-02-27T19:23:22 EET" duration-ms="6758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTestCase -->
+        <test-method signature="divideTestCase()[pri:7, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:22 EET" name="divideTestCase" description="Division of two numbers" finished-at="2024-02-27T19:23:28 EET" duration-ms="6740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divideTestCase -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:smokeTest.MathematicalCalculations@799f10e1]" started-at="2024-02-27T19:23:28 EET" name="afterTest" finished-at="2024-02-27T19:23:29 EET" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

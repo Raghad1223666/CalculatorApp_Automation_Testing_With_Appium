@@ -2,16 +2,31 @@ package pageObjects;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Date;
+import java.net.MalformedURLException;
+import java.net.URI;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+
 public class Actions extends Parameters {
 	public String idBeginningForNumber = "com.google.android.calculator:id/digit_";
 
+	public void calculatorSetup() throws MalformedURLException {
+		desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "PixelQA");
+
+		// Only for Mobile Application capabilities
+		desiredCapabilities.setCapability(MobileCapabilityType.APP,
+				System.getProperty("user.dir") + File.separator + "app" + File.separator + "calculator.apk");
+		var appiumServerUrl = URI.create("http://127.0.0.1:4723/wd/hub").toURL();
+		driver = new AndroidDriver(appiumServerUrl, desiredCapabilities);
+	}
+	
 	public int[] convertNumberToArrayOfDigits(int number) {
 		// Convert the number to a string
 		String numberAsString = String.valueOf(number);
@@ -112,5 +127,10 @@ public class Actions extends Parameters {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	@SuppressWarnings("deprecation")
+	public void closeApp() {
+		driver.closeApp();
 	}
 }
